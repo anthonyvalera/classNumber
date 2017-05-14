@@ -10,7 +10,6 @@
 #define Number_h
 
 #include <iostream>
-#include <fstream>
 
 /**
  * Exception class for bad numbers
