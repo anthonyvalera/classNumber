@@ -68,9 +68,6 @@ public:
   T operator *(const Number<T>& n) { return _data * n._data; }
   T operator *(const T& n) { return _data * n; }
   
-  T operator ++() { return _data + 1; }
-  T operator --() { return _data - 1; }
-  
   T getData() const { return _data; }
   
 private:
@@ -171,9 +168,6 @@ public:
   
   T operator *(const RealNumber<T>& n) { return getData() * n.getData(); }
   T operator *(const T& n) { return getData() * n; }
-  
-  T operator ++() { return getData() + 1; }
-  T operator --() { return getData() - 1; }
   
   T getData() const {
     return combine(_number, _decimal);
